@@ -1,0 +1,9 @@
+.post {
+  border: 1px solid;
+  border-color: var(--window-border-color);
+  background-color: white;
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

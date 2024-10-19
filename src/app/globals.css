@@ -1,10 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #ffa500;
+  --secondary-color: #ff4500;
+  --background-color: #f0f0f0;
+  --text-color: #000000;
+  --window-border-color: #c0c0c0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +16,32 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container-box {
+  width: auto;
+  height: auto;
+  min-height: 500px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--background-color);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  margin-top: -21px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header {
+  border: 1px solid;
+  border-color: var(--window-border-color);
+  background-color: white;
+  font-size: 16px;
+  padding: 5px;
+  position: relative;
+  top: 5px;
+  overflow-wrap: break-word;
 }

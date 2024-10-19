@@ -1,0 +1,36 @@
+.blogPosts {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogIndividual {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.blogIndividual-1 {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogIndividual::before {
+  content: '📁';
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.deleteForm {
+  margin-left: auto;
+}
+
+.blogDelete {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 10px;
+  border: none;
+  background-color: var(--background-color);
+}
