@@ -18,7 +18,7 @@ export default async function PostsPage() {
 
   return (
     <div className='container-box'>
-      <h1 className='header'>C:\Users\Projects\ShredWithFriendsBlogPosts</h1>
+      <h1 className='header'>C:\Users\Projects\ShredWithFriends\BlogPosts</h1>
       <ul className='blogPosts'>
         {blogposts.map((post) => (
           <li key={post.id} className='blogIndividual'>

@@ -9,7 +9,7 @@ export default function AboutPage() {
       <h1 className='header'>C:\Users\Projects\ShredWithFriends\About</h1>
       <div className="blogimage">
         <Image src={msword} height={50} width={50} alt='ms word 2003' />
-        <Link href={'/about/abouttext'} className='blogIndividual'>
+        <Link href={'/about/abouttext'} className='about'>
           about.docx
         </Link>
       </div>
