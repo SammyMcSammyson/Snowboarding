@@ -76,9 +76,6 @@ export default async function IdPage({ params }) {
           <div key={post.id}>
             <div className='post-1'>
               <h1>{post.blog_post}</h1>
-              <p>{post.upvotes}</p>
-              <p>{post.downvotes}</p>
-              <p>{post.catergory}</p>
               <p>{post.blog_text}</p>
             </div>
           </div>

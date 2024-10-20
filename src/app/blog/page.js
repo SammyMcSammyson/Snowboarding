@@ -1,9 +1,8 @@
-import pg from 'pg';
 import Link from 'next/link';
-import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
 import { db } from '../../utils/utilities.js';
 import '../css/blogposts.css';
+import { useSearchParams } from 'react-router-dom';
 
 export default async function PostsPage() {
   const blogposts = (await db.query(`SELECT * FROM snowboarding_post`)).rows;
@@ -25,9 +24,9 @@ export default async function PostsPage() {
             <Link className='blogIndividual-1' href={`/blog/${post.id}`}>
               {post.blog_post}
             </Link>
+
             <form action={handleDeletePost} className='deleteForm'>
               <input type='hidden' name='postId' value={post.id} />
-
               <button className='blogDelete' type='submit'>
                 🗑️
               </button>
